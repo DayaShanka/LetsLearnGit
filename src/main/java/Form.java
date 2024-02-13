@@ -26,7 +26,8 @@ public class Form {
         // Deleting values in the text box		
         email.clear();			
         password.clear();			
-        System.out.println("Text Field Cleared");					
+        System.out.println("Text Field Cleared");
+        System.out.println("Text added");
 
         // Find the submit button		
         WebElement login = driver.findElement(By.id("SubmitLogin"));							
