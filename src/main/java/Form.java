@@ -43,7 +43,8 @@ public class Form {
         driver.findElement(By.id("email")).sendKeys("abcd@gmail.com");							
         driver.findElement(By.name("passwd")).sendKeys("abcdefghlkjl");							
         driver.findElement(By.id("SubmitLogin")).submit();					
-        System.out.println("Login Done with Submit.");					
+        System.out.println("Login Done with Submit.");		
+        System.out.println("Data added");
          
 		//driver.close();		
         		
