@@ -30,6 +30,9 @@ public class Alert {
         		
         // Accepting alert		
         driver.switchTo().alert().accept();		
+        
+        driver.switchTo().alert().getText();
+        
     }	
 
 }
