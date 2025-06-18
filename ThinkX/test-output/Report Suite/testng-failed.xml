@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Report Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test1(failed)">
+    <parameter name="os" value="windows"/>
+    <parameter name="browser" value="edge"/>
+    <parameter name="url" value="https://qaserver.thinkexam.com/candidate"/>
+    <classes>
+      <class name="testcases.TestReport">
+        <methods>
+          <include name="verifyClickOnSubjectReportTest"/>
+          <include name="setup"/>
+          <include name="initializeReportPage"/>
+          <include name="verifyClickOnSolutionReportTest"/>
+          <include name="teardown"/>
+          <include name="verifyClickOnOmrSheetReportTest"/>
+          <include name="verifyClickOnCompareYourSelfReportTest"/>
+          <include name="verifyClickOnViewReportTest"/>
+          <include name="login" invocation-numbers="0"/>
+          <include name="verifyClickOnQuestionReportTest"/>
+        </methods>
+      </class> <!-- testcases.TestReport -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Report Suite] -->
