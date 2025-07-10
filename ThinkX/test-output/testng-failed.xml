@@ -3,14 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.DigitalMaterialTest">
+      <class name="testcases.LoginWithXLSX">
         <methods>
-          <include name="login" invocation-numbers="0"/>
-          <include name="setup"/>
-          <include name="initializeDigitalMaterial"/>
-          <include name="teardown"/>
+          <include name="loginTest" invocation-numbers="2 3"/>
         </methods>
-      </class> <!-- testcases.DigitalMaterialTest -->
+      </class> <!-- testcases.LoginWithXLSX -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

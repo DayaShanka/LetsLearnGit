@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\admin\AppData\Local\Temp\testng-eclipse--230098923\testng-customsuite.xml</span>
+                    <span>C:\Users\admin\AppData\Local\Temp\testng-eclipse--914941980\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
+                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,7 +103,12 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testcases.DigitalMaterialTest" class="method navigator-link" hash-for-method="login(null, null)">login(null, null)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testcases.LoginWithXLSX" class="method navigator-link" hash-for-method="loginTest(abc@gmail.com, 123, invalid)">loginTest(abc@gmail.com, 123, invalid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testcases.LoginWithXLSX" class="method navigator-link" hash-for-method="loginTest(abid.saleem@thinkexam.com, 123456, valid)">loginTest(abid.saleem@thinkexam.com, 123456, valid)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -117,32 +122,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testcases.DigitalMaterialTest" class="method navigator-link" hash-for-method="clickOnDigitalMaterialTest">clickOnDigitalMaterialTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testcases.LoginWithXLSX" class="method navigator-link" hash-for-method="loginTest(, 123456, invalid)">loginTest(, 123456, invalid)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testcases.DigitalMaterialTest" class="method navigator-link" hash-for-method="clickOnDownloadButtonTest">clickOnDownloadButtonTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testcases.DigitalMaterialTest" class="method navigator-link" hash-for-method="clickOnHomeAssignmentTest">clickOnHomeAssignmentTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testcases.DigitalMaterialTest" class="method navigator-link" hash-for-method="clickOnNotesTest">clickOnNotesTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testcases.DigitalMaterialTest" class="method navigator-link" hash-for-method="login(naman1@gmail.com, 1234)">login(naman1@gmail.com, 1234)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testcases.DigitalMaterialTest" class="method navigator-link" hash-for-method="visibilityOfViewColumnTest">visibilityOfViewColumnTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testcases.LoginWithXLSX" class="method navigator-link" hash-for-method="loginTest(abid.saleem@thinkexam.com, , invalid)">loginTest(abid.saleem@thinkexam.com, , invalid)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -160,23 +145,69 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">testcases.DigitalMaterialTest</span>
+              <span class="class-name">testcases.LoginWithXLSX</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="login(null, null)">
-                  </a> <!-- login(null, null) -->
-                  <span class="method-name">login</span>
-                  <span class="parameters">(null,null)</span>
-                  <div class="stack-trace">java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
+                  <a name="loginTest(abc@gmail.com, 123, invalid)">
+                  </a> <!-- loginTest(abc@gmail.com, 123, invalid) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(abc@gmail.com,123,invalid)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class=&apos;error&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54886}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54886/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2c244666ec639be87b312397587f2d2f
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at testcases.LoginWithXLSX.loginTest(LoginWithXLSX.java:39)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.sendKeys(Unknown Source)
-	at webpages.LoginPage.enterEmail(LoginPage.java:24)
-	at testcases.DigitalMaterialTest.login(DigitalMaterialTest.java:18)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest(abid.saleem@thinkexam.com, 123456, valid)">
+                  </a> <!-- loginTest(abid.saleem@thinkexam.com, 123456, valid) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(abid.saleem@thinkexam.com,123456,valid)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class=&apos;error&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54912}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54912/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f304b4627c5a77a4c13e9b5febf84aa5
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at testcases.LoginWithXLSX.loginTest(LoginWithXLSX.java:39)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -212,50 +243,23 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testcases.DigitalMaterialTest</span>
+              <span class="class-name">testcases.LoginWithXLSX</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="clickOnDigitalMaterialTest">
-                  </a> <!-- clickOnDigitalMaterialTest -->
-                  <span class="method-name">clickOnDigitalMaterialTest</span>
+                  <a name="loginTest(, 123456, invalid)">
+                  </a> <!-- loginTest(, 123456, invalid) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(,123456,invalid)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="clickOnDownloadButtonTest">
-                  </a> <!-- clickOnDownloadButtonTest -->
-                  <span class="method-name">clickOnDownloadButtonTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="clickOnHomeAssignmentTest">
-                  </a> <!-- clickOnHomeAssignmentTest -->
-                  <span class="method-name">clickOnHomeAssignmentTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="clickOnNotesTest">
-                  </a> <!-- clickOnNotesTest -->
-                  <span class="method-name">clickOnNotesTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="login(naman1@gmail.com, 1234)">
-                  </a> <!-- login(naman1@gmail.com, 1234) -->
-                  <span class="method-name">login</span>
-                  <span class="parameters">(naman1@gmail.com,1234)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="visibilityOfViewColumnTest">
-                  </a> <!-- visibilityOfViewColumnTest -->
-                  <span class="method-name">visibilityOfViewColumnTest</span>
+                  <a name="loginTest(abid.saleem@thinkexam.com, , invalid)">
+                  </a> <!-- loginTest(abid.saleem@thinkexam.com, , invalid) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(abid.saleem@thinkexam.com,,invalid)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -263,7 +267,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\admin\AppData\Local\Temp\testng-eclipse--230098923\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\admin\AppData\Local\Temp\testng-eclipse--914941980\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -272,7 +276,11 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testcases.DigitalMaterialTest&quot;/&gt;
+      &lt;class name=&quot;testcases.LoginWithXLSX&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;loginTest&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testcases.LoginWithXLSX --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -312,40 +320,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'clickOnDownloadButtonTest')
-data.setCell(0, 2, 'testcases.DigitalMaterialTest')
-data.setCell(0, 3, 4117);
+data.setCell(0, 1, 'loginTest')
+data.setCell(0, 2, 'testcases.LoginWithXLSX')
+data.setCell(0, 3, 12282);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'login')
-data.setCell(1, 2, 'testcases.DigitalMaterialTest')
-data.setCell(1, 3, 2482);
+data.setCell(1, 1, 'loginTest')
+data.setCell(1, 2, 'testcases.LoginWithXLSX')
+data.setCell(1, 3, 11990);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'clickOnNotesTest')
-data.setCell(2, 2, 'testcases.DigitalMaterialTest')
-data.setCell(2, 3, 2221);
+data.setCell(2, 1, 'loginTest')
+data.setCell(2, 2, 'testcases.LoginWithXLSX')
+data.setCell(2, 3, 5960);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'clickOnHomeAssignmentTest')
-data.setCell(3, 2, 'testcases.DigitalMaterialTest')
-data.setCell(3, 3, 2205);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'clickOnDigitalMaterialTest')
-data.setCell(4, 2, 'testcases.DigitalMaterialTest')
-data.setCell(4, 3, 2102);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'visibilityOfViewColumnTest')
-data.setCell(5, 2, 'testcases.DigitalMaterialTest')
-data.setCell(5, 3, 2046);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'login')
-data.setCell(6, 2, 'testcases.DigitalMaterialTest')
-data.setCell(6, 3, 89);
+data.setCell(3, 1, 'loginTest')
+data.setCell(3, 2, 'testcases.LoginWithXLSX')
+data.setCell(3, 3, 1955);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <span class="suite-total-time">Total running time: 32 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -371,49 +367,27 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testcases.DigitalMaterialTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setup</span>
+              <div class="chronological-class-name">testcases.LoginWithXLSX</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginTest(abid.saleem@thinkexam.com, , invalid)</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-class before">
-                <span class="method-name">initializeDigitalMaterial</span>
-                <span class="method-start">5376 ms</span>
-              </div> <!-- configuration-class before -->
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginTest(, 123456, invalid)</span>
+                <span class="method-start">5963 ms</span>
+              </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">login(null, null)</span>
-                <span class="method-start">7365 ms</span>
+                <span class="method-name">loginTest(abc@gmail.com, 123, invalid)</span>
+                <span class="method-start">7922 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">login(naman1@gmail.com, 1234)</span>
-                <span class="method-start">7460 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginTest(abid.saleem@thinkexam.com, 123456, valid)</span>
+                <span class="method-start">19916 ms</span>
               </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">clickOnDigitalMaterialTest</span>
-                <span class="method-start">9946 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">visibilityOfViewColumnTest</span>
-                <span class="method-start">12050 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">clickOnDownloadButtonTest</span>
-                <span class="method-start">14098 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">clickOnHomeAssignmentTest</span>
-                <span class="method-start">18218 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">clickOnNotesTest</span>
-                <span class="method-start">20425 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">22648 ms</span>
-              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
